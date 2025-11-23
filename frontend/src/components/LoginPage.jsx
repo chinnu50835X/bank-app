@@ -18,10 +18,10 @@ export default function LoginPage({ onNavigate }) {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (!/^\d{6,20}$/.test(formData.accountNumber)) {
-      setError('Please enter a valid account number');
-      return;
-    }
+    // if (!/^\d{6,20}$/.test(formData.accountNumber)) {
+    //   setError('Please enter a valid account number');
+    //   return;
+    // }
     if (formData.password.length < 6) {
       setError('Password must be at least 6 characters');
       return;
